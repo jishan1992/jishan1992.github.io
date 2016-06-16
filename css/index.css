@@ -1,0 +1,140 @@
+html{ overflow: hidden; font-size: 20px;}
+#box{ position: fixed; left: 0; top: 0;}
+#box .bg{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: #000; opacity: 0; z-index: -1;}
+
+
+.right-box{  width: 1px; height: 200px; position: fixed; right: 30px; top: 50%; margin-top: -100px; background: #000; z-index: 3;}
+.right-box .l0{ position: absolute; right: 0; top: 30px;}
+.right-box .l1{ position: absolute; right: 0; top: 60px;}
+.right-box .l2{ position: absolute; right: 0; top: 90px;}
+.right-box .l3{ position: absolute; right: 0; top: 120px;}
+.right-box .l4{ position: absolute; right: 0; top: 150px;}
+.right-box li a{ color: #666;}
+.right-box li .on{ color: #fff;}
+
+body{ background: #002839; overflow-x: hidden;}
+/*page0*/
+.header-box{ width: 100%; position: relative; background: #000; z-index: 6; }
+.header-box a{ position: absolute; z-index: 10; opacity: 0;}
+.header-box .left{ left: 30%; bottom: 10%; background: url(../img/arrow1.png) no-repeat 0 0; background-size: 100% 100%;} 
+.header-box .right{ right: 30%; bottom: 10%; background: url(../img/arrow2.png) no-repeat 0 0; background-size: 100% 100%;} 
+.header-box .page0-ul { position: relative; left: 0; top: 0; z-index: 1;}
+.header-box .page0-ul li{ float: left; position: relative;}
+.header-box .page0-ul .li1{ background: url(../img/bg1.jpg) no-repeat center; background-size: cover;}
+.header-box .page0-ul .li2{ background: url(../img/bg2.jpg) no-repeat center; background-size: cover;}
+.header-box .page0-ul .li3{ background: url(../img/bg3.jpg) no-repeat center; background-size: cover;}
+
+.header-box .page0-ul div{  width: 100%; height: 100%; 
+		 /* Safari 5.1 - 6.0 */
+		    background: -webkit-linear-gradient(right, #002839, #a66616);
+		    background: -moz-linear-gradient(right, #002839, #a66616);
+		    background: -o-linear-gradient(right, #002839, #a66616);
+		    background: -webkit-gradient(linear, 100% 0, 0 0, from(#002839), to(#a66616));
+		    background: linear-gradient(right, #002839, #a66616); /* Opera 11.1 - 12.0 */
+		 /* Firefox 3.6 - 15 */
+		 /* 标准的语法（必须放在最后） */
+		opacity: 0.4; filter:alpha(opacity:40); position: absolute; left: 0; top: 0;}
+
+
+.page1{ width: 100%; height: 100%; background: url(../img/page1.jpg) no-repeat 0 0; background-size: cover;}
+.page1-bg{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: #a26616; opacity: 0.2; filter: alpha(opacity:20);}
+/*pc端*/
+@media screen and (min-width:998px){
+	/*左右按钮*/
+	.header-box a{ width: 86px; height: 86px; }
+	
+	/*my Website*/
+	.nav{ width: 100%; position: fixed; top: -90px; left: 0; z-index: 10; background: #000;}
+	.nav .nav-box{ max-width: 1200px; -width: 980px; margin: 0 auto; height:90px; line-height:90px; position: relative; z-index: 3;}
+	.nav-box p{ float: left; font-size: 45px; font-weight: bold; font-family: 'STXingkai'; color: #fff;}
+	.nav-box .nav-div{ float: right;}
+	.nav-box .nav-div a{ float: left; padding-left: 20px; color: #fff; font-size: 40px; font-family: 'STXingkai';}
+	/*page1*/
+	
+	/*page2作品部分*/
+	.page2-box{ max-width: 1200px; width: 980px; margin: 0 auto; }
+	.page2-box h1{ padding-left: 0px; padding-top: 100px; width: 100%; text-align: center; height: 100px; line-height: 100px;  font-weight: bold; font-size: 70px; font-family: 'STXingkai'; font-style: italic; color: #49c9de;}
+	.page2-ul1{ width: 980px; margin: 0 auto;}
+	.page2-ul1 li{ float: left; margin: 5px; width: 235px; height: 300px; position: relative;}
+	.page2-ul1 li p{ width: 100%; text-align: center; height: 50px; line-height: 50px; background: #fff; position: absolute; left: 0; bottom: 0; color: #666; font-size: 20px;}
+	.page2-ul1 li img{ width: 100%; height: 100%;}
+}
+
+/*pad端1*/
+@media screen and (min-width:868px) and (max-width:997px){
+	/*左右按钮*/
+	.header-box a{ width: 60px; height: 60px; }
+	/*my Website*/
+	.nav{ width: 100%; position: fixed; top: -70px; left: 0; z-index: 10; background: #000;}
+	.nav .nav-box{ width: 850px; margin: 0 auto; height: 70px; line-height: 70px; position: relative; z-index: 3;}
+	.nav-box p{ float: left; font-size: 35px; font-weight: bold; font-family: 'STXingkai'; color: #fff;}
+	.nav-box .nav-div{ float: right;}
+	.nav-box .nav-div a{ float: left; padding-left: 10px; color: #fff; font-size: 30px; font-family: 'STXingkai';}
+	/*page2作品部分*/
+	.page2-box{ width: 850px; margin: 0 auto; }
+	.page2-box h1{ padding-left: 0px; padding-top: 90px; width: 100%; text-align: center; height: 100px; line-height: 100px;  font-weight: bold; font-size: 70px; font-family: 'STXingkai'; font-style: italic; color: #49c9de;}
+	.page2-ul1 li{ float: left; margin: 5px; width: 201px; height: 250px; position: relative;}
+	.page2-ul1 li p{ width: 100%; text-align: center; height: 50px; line-height: 50px; background: #fff; position: absolute; left: 0; bottom: 0; color: #666; font-size: 20px;}
+	.page2-ul1 li img{ width: 100%; height: 100%;}
+}
+
+/*pad端2*/
+@media screen and (min-width:768px) and (max-width:867px){
+	/*左右按钮*/
+	.header-box a{ width: 60px; height: 60px; }
+	/*my Website*/
+	.nav{ width: 100%; position: fixed; top: -60px; left: 0; z-index: 10; background: #000; }
+	.nav .nav-box{ width: 750px; margin: 0 auto; height: 60px; line-height: 60px; position: relative; z-index: 3;}
+	.nav-box p{ float: left; font-size: 30px; font-weight: bold; font-family: 'STXingkai'; color: #fff;}
+	.nav-box .nav-div{ float: right;}
+	.nav-box .nav-div a{ float: left; padding-left: 10px; color: #fff; font-size: 25px; font-family: 'STXingkai';}
+	/*page2作品部分*/
+	.page2-box{ width: 750px; margin: 0 auto; }
+	.page2-box h1{ padding-left: 0px; padding-top: 70px; width: 100%; text-align: center; height: 70px; line-height: 70px;  font-weight: bold; font-size: 70px; font-family: 'STXingkai'; font-style: italic; color: #49c9de;}
+	.page2-ul1{ width: 750px; margin: 0 auto;}
+	.page2-ul1 li{ float: left; margin: 5px; width: 365px; height: 225px; position: relative;}
+	.page2-ul1 li p{ width: 100%; text-align: center; height: 40px; line-height: 40px; background: #fff; position: absolute; left: 0; bottom: 0; color: #666; font-size: 20px;}
+	.page2-ul1 li img{ width: 100%; height: 100%;}
+}
+
+/*pad端3*/
+@media screen and (min-width:658px) and (max-width:767px){
+	/*左右按钮*/
+	.header-box a{ width: 60px; height: 60px; }
+	/*my Website*/
+	.nav{ width: 100%; position: fixed; top: -60px; left: 0; z-index: 10; background: #000;}
+	.nav .nav-box{ width: 650px; margin: 0 auto; height: 60px; line-height: 60px; position: relative; z-index: 3;}
+	.nav-box p{ float: left; font-size: 30px; font-weight: bold; font-family: 'STXingkai'; color: #fff;}
+	.nav-box .nav-div{ float: right;}
+	.nav-box .nav-div a{ float: left; padding-left: 10px; color: #fff; font-size: 25px; font-family: 'STXingkai';}
+	
+	/*page2作品部分*/
+	.page2-box{ width: 650px; margin: 0 auto; }
+	.page2-box h1{ padding-left: 0px; padding-top: 60px; width: 100%; text-align: center; height: 60px; line-height: 60px;  font-weight: bold; font-size: 50px; font-family: 'STXingkai'; font-style: italic; color: #49c9de;}
+	.page2-ul1 li{ float: left; margin: 5px; width: 315px; height: 230px; position: relative;}
+	.page2-ul1 li p{ width: 100%; text-align: center; height: 50px; line-height: 50px; background: #fff; position: absolute; left: 0; bottom: 0; color: #666; font-size: 20px;}
+	.page2-ul1 li img{ width: 100%; height: 100%;}
+	
+}
+
+
+/*移动端*/
+@media screen and (min-width:248px) and (max-width:657px){
+	/*左右按钮*/
+	.header-box{ min-width: 248px;}
+	.header-box a{ width: 43px; height: 43px; }
+	/*my Website*/
+	.nav{ width: 100%;  position: fixed; top: -50px; left: 0; z-index: 10; background: #000; }
+	.nav .nav-box{ padding: 0 20px; height: 50px; line-height: 50px; position: relative; z-index: 3; box-sizing:border-box;}
+	.nav-box p{ float: left; font-size: 30px; font-weight: bold; font-family: 'STXingkai'; color: #fff;}
+	.nav-box .nav-div{ float: right; font-size: 20px; color: #fff;  position: relative;}
+	.nav-box .nav-div div{ display: none; position: absolute; top: 50px; right: -20px; background: #000; height: 140px; box-sizing:border-box; -opacity: 0.4; -filter: alpha(opacity:40);}
+	.nav-box div a{ padding-left: 20px; display: block; height: 35px; line-height: 35px; color: #fff; font-size: 20px; font-family: 'STXingkai'; box-sizing:border-box;}
+	
+	/*page2作品部分*/
+	.page2-box{ width: 100%; margin: 0 auto; }
+	.page2-box h1{ padding-left: 0px; padding-top: 90px; width: 100%; text-align: center; height: 100px; line-height: 100px;  font-weight: bold; font-size: 70px; font-family: 'STXingkai'; font-style: italic; color: #49c9de;}
+	.page2-ul1 li{ float: left; margin: 5px; width: 100%; height: 50%; position: relative;}
+	.page2-ul1 li p{ width: 100%; text-align: center; height: 50px; line-height: 50px; background: #fff; position: absolute; left: 0; bottom: 0; color: #666; font-size: 20px;}
+	.page2-ul1 li img{ width: 100%; height: 100%;}
+}
