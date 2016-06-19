@@ -1,43 +1,46 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>个人站1</title>
+		<title>个人站</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link href="bg.png" rel="shortcut icon" />
 		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/index.min.css" />
 		<link rel="stylesheet" href="iconfont/iconfont.css" />
-		<script src="js/base.js"></script>
-		<script src="js/index.js"></script>
-		<script src="js/move.js"></script>
+		<script src="js/base.min.js"></script>
+		<script src="js/index.min.js"></script>
+		<script src="js/move.min.js"></script>
 	</head>
 	<body>
-		<ul class="right-box" id="right">
-			<li class="l0"><a href="javascript:;" class="on">HOME</a></li>
-			<li class="l1"><a href="javascript:;">WORK</a></li>
-			<li class="l2"><a href="javascript:;">RESUME</a></li>
-			<li class="l3"><a href="javascript:;">CONTANTME</a></li>
-			<li class="l4"><a href="javascript:;">ABOUT</a></li>
-		</ul>
-		
+		<audio autoplay lop src="1.mp3"></audio>
 		<div class="nav" id="nav">
 			<div class="bg"></div>
 			<div class="nav-box clearfix" >
 				<p id="p1">My Website</p>
-				<div class="nav-div iconfont" id="nav-div">
+				<div class="nav-div iconfont">
 					<div class="clearfix">
-						<a href="javascript:;">改下</a>
-						<a href="javascript:;">关于</a>
-						<a href="javascript:;">作品</a>
-						<a href="javascript:;">联系</a>
+						<a href="javascript:;">HOME</a>
+						<a href="javascript:;">INTRODUCE</a>
+						<a href="javascript:;">WORK</a>
+						<a href="javascript:;">CONTAINS</a>
+						<a href="javascript:;">ABOUT</a>
+					</div>
+				</div>
+				<div class="nav-div1 iconfont">
+					<em class="iconfont" id="nav-right">&#xe63f;</em>
+					<div class="clearfix" id="nav-list">
+						<a href="javascript:;">HOME</a>
+						<a href="javascript:;">INTRODUCE</a>
+						<a href="javascript:;">WORK</a>
+						<a href="javascript:;">CONTAINS</a>
+						<a href="javascript:;">ABOUT</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div id="box">
-			<p id="bg" class="bg"></p>
 			<input type="text" id="text"  value="0" style="display: none;"/>
 			<div class="header-box page" id="page0">
 				<a href="javascript:;" class="left"></a>
@@ -48,30 +51,123 @@
 					<li class="li3"><div></div></li>
 				</ul>
 			</div>
-			<div class="page1 page">
-				<div class="page1-bg"></div>
+			<div class="introduce page">
+				<h1>INTRODUCE</h1>
+				<div class="sculpture"></div>
+				<div class="introduce-div1">
+					<p>hi,我叫戢(ji)珊,是一名前端工程师,精通响应式设局,熟练html、熟练css、精通原生js、了解Html5、精通ajax、精通jsonp、h5......</p>
+				</div>
+				<ul class="introduce-div2">
+					<li class="li1">
+						<h2>html+css</h2>
+						<div><span></span></div>
+					</li>
+					<li class="li2">
+						<h2>Photoshop</h2>
+						<div><span></span></div>
+					</li>
+					<li class="li2">
+						<h2>javascript</h2>
+						<div><span></span></div>
+					</li>
+				</ul>
+				<div class="introduce-div3 clearfix">
+					<a href="javascript:;">个人简历<span></span></a>
+					<a href="javascript:;">个人作品<span></span></a>
+				</div>
 			</div>
-			<div class="page2 page">
-				<div class="page2-box">
-					<h1>作品</h1>
-					<ul class="page2-ul1">
+			<div class="ability page" id="ability">
+				<div class="ability-bg"></div>
+				<ul class="clearfix">
+					<li>
+						<div></div>
+						<p class="iconfont">&#xe656;</p>
+					</li>
+					<li>
+						<div></div>
+						<p class="iconfont">&#xe61d;</p>
+					</li>
+					<li>
+						<div></div>
+						<p class="iconfont">&#xe658;</p>
+					</li>
+					<li>
+						<div></div>
+						<p class="iconfont">&#xe6ad;</p>
+					</li>
+				</ul>
+			</div>
+			<div class="work page" id="work">
+				<div class="work-box">
+					<h1>WORK</h1>
+					<h2>以下内容包括html+css/原生js/h5+css3....</h2>
+					<div class="mask-box" id="mask-box">
+						<span class="iconfont close">&#xe616;</span>
+						<div>
+							<img src="img/img1/bg1.jpg" alt="" />
+							<em class="iconfont left">&#xe6b0;</em>
+							<i class="iconfont right">&#xe6af;</i>
+						</div>
+					</div>
+					<ul class="work-ul1 clearfix">
 						<li><a href="javascript:;">
-							<img src="img/img1/bg1.jpg"/>
-							<p>html+css</p>
+							<div class="mask">
+								<p class="iconfont">&#xe620;</p>
+								<p>click here</p>
+							</div>
+							<img src="img/img1/bg1.jpg" alt="" class="img-response"/>
 						</a></li>
-						<li>
-							<a href="javascript:;"><img src="img/img1/bg2.jpg"/>
-							<p>javascript</p>	
+						<li><a href="javascript:;">
+							<div class="mask">
+								<p class="iconfont">&#xe620;</p>
+								<p>click here</p>
+							</div>
+							<img src="img/img1/bg2.jpg" alt="" class="img-response"/>
 						</a></li>
-						<li>
-							<a href="javascript:;"><img src="img/img1/bg3.jpg"/>
-							<p>html5</p>
+						<li><a href="javascript:;">
+							<div class="mask">
+								<p class="iconfont">&#xe620;</p>
+								<p>click here</p>
+							</div>
+							<img src="img/img1/bg3.jpg" alt="" class="img-response"/>
 						</a></li>
-						<li>
-							<a href="javascript:;"><img src="img/img1/bg4.jpg"/>
-							<p></p>
+						<li><a href="javascript:;">
+							<div class="mask">
+								<p class="iconfont">&#xe620;</p>
+								<p>click here</p>
+							</div>
+							<img src="img/img1/bg4.jpg" alt="" class="img-response"/>
+						</a></li>
+						<li><a href="javascript:;">
+							<div class="mask">
+								<p class="iconfont">&#xe620;</p>
+								<p>click here</p>
+							</div>
+							<img src="img/img1/bg5.jpg" alt="" class="img-response"/>
+						</a></li>
+						<li><a href="javascript:;">
+							<div class="mask">
+								<p class="iconfont">&#xe620;</p>
+								<p>click here</p>
+							</div>
+							<img src="img/img1/bg6.jpg" alt="" class="img-response"/>
+						</a></li>
+						<li><a href="javascript:;">
+							<div class="mask">
+								<p class="iconfont">&#xe620;</p>
+								<p>click here</p>
+							</div>
+							<img src="img/img1/bg7.jpg" alt="" class="img-response"/>
+						</a></li>
+						<li><a href="javascript:;">
+							<div class="mask">
+								<p class="iconfont">&#xe620;</p>
+								<p>click here</p>
+							</div>
+							<img src="img/img1/bg8.jpg" alt="" class="img-response"/>
 						</a></li>
 					</ul>
+					<p class="more"><a href="javascript:;">更多作品</a></p>
 				</div>
 			</div>
 			<div class="page3 page"></div>
